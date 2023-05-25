@@ -16,7 +16,7 @@ function addToZero(nums) {
   let numbers = [1,2,3,-2]
   console.log(addToZero(numbers));
 
-//runtime complexity is: O(n) complexity
+//runtime complexity is: O(n)
 
 //tests
 // addToZero([]);
@@ -45,7 +45,7 @@ function hasUniqueChars(word) {
 
 console.log(hasUniqueChars("Moonday"));
 
-//runtime complexity is: O(n) complexity
+//runtime complexity is: O(n)
 
 //tests
 // hasUniqueChars("Monday");
@@ -70,7 +70,7 @@ function isPangram(sentence) {
 
 console.log(isPangram("I like cats, but not mice"))
 
-//runtime complexity is:O(n)
+//runtime complexity is: O(n)
 
 //tests
 // isPangram("The quick brown fox jumps over the lazy dog!");
@@ -79,3 +79,22 @@ console.log(isPangram("I like cats, but not mice"))
 // isPangram("I like cats, but not mice");
 // // -> False
 
+function find_longest_word(words) {
+  let longest_length = 0;
+
+  for(let word of words) {
+    if (word.length > longest_length) {
+      longest_length = word.length;
+    }
+  }
+  return longest_length;
+}
+
+let words = ["hi", "hello"]
+console.log(find_longest_word(words))
+
+//runtime complexity is: O(n)
+
+//test
+//findLongestWord(["hi", "hello"]);
+// -> 5
