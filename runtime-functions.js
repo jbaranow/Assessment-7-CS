@@ -16,6 +16,8 @@ function addToZero(nums) {
   let numbers = [1,2,3,-2]
   console.log(addToZero(numbers));
 
+//runtime complexity is: O(n) complexity
+
 // //Tests
 // addToZero([]);
 // // -> False
@@ -42,6 +44,8 @@ function hasUniqueChars(word) {
 }
 
 console.log(hasUniqueChars("Moonday"));
+
+//runtime complexity is: O(n) complexity
 
 // //tests
 // hasUniqueChars("Monday");
