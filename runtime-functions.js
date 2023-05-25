@@ -18,7 +18,7 @@ function addToZero(nums) {
 
 //runtime complexity is: O(n) complexity
 
-// //Tests
+//tests
 // addToZero([]);
 // // -> False
 
@@ -47,9 +47,34 @@ console.log(hasUniqueChars("Moonday"));
 
 //runtime complexity is: O(n) complexity
 
-// //tests
+//tests
 // hasUniqueChars("Monday");
 // // -> True
 
 // hasUniqueChars("Moonday");
+// // -> False
+
+function isPangram(sentence) {
+  sentence = sentence.toLowerCase();
+
+  let letterSet = new Set();
+
+  for (let i = 0; i < sentence.length; i++) {
+    let char = sentence[i];
+    if (char >= 'a' && char <= 'z') {
+      letterSet.add(char);
+    }
+  }
+  return letterSet.size === 26;
+}
+
+console.log(isPangram("I like cats, but not mice"))
+
+//runtime complexity is:
+
+//tests
+// isPangram("The quick brown fox jumps over the lazy dog!");
+// // -> True
+
+// isPangram("I like cats, but not mice");
 // // -> False
