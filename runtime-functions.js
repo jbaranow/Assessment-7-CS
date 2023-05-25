@@ -70,7 +70,7 @@ function isPangram(sentence) {
 
 console.log(isPangram("I like cats, but not mice"))
 
-//runtime complexity is:
+//runtime complexity is:O(n)
 
 //tests
 // isPangram("The quick brown fox jumps over the lazy dog!");
@@ -78,3 +78,4 @@ console.log(isPangram("I like cats, but not mice"))
 
 // isPangram("I like cats, but not mice");
 // // -> False
+
