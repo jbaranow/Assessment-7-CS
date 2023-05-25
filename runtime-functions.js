@@ -28,3 +28,24 @@ function addToZero(nums) {
 
 // addToZero([1, 2, 3, -2]);
 // // -> True
+
+function hasUniqueChars(word) {
+  let charSet = new Set();
+
+  for (let char of word) {
+    if (charSet.has(char)) {
+      return false;
+    }
+    charSet.add(char);
+  }
+  return true;
+}
+
+console.log(hasUniqueChars("Moonday"));
+
+// //tests
+// hasUniqueChars("Monday");
+// // -> True
+
+// hasUniqueChars("Moonday");
+// // -> False
